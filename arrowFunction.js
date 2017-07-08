@@ -22,3 +22,10 @@ console.log(getPriceES6(0.6))
 const getPriceES6MultipleParams = (discount,tax) => 3.15 * discount + tax
 console.log(getPriceES6MultipleParams(0.20,1))
 
+// Multi statement arrow functions do require the return statement
+const getFinalPrice = (discount,tax) => {
+	const afterDiscount = 3.15 * discount
+	return afterDiscount + tax
+}
+
+//Single line arrow functions return is implicit. when curly braces are used you need a return
