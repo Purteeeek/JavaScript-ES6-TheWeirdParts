@@ -55,3 +55,10 @@ customers.map(function(customer) {
 })
 
 // ANd now the magic that ES6 does. lets use map in ES6 with arrow functions . it looks something like this
+
+customer_Email = customers.map(mapEmail = customerdata => customerdata.email)
+
+console.log(customer_Email)
+
+// this helps create a pipeline. you can chain many map functions to one another. But this is the basic that you need to know to shift to es6
+
