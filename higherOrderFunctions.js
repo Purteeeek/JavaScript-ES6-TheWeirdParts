@@ -44,11 +44,13 @@ var customers = [{
     nat: "NL"
 }]
 
-// sorting and filtering data in ES6. 
+// sorting and filtering data in ES6. both of them are HOF's on an array which take in a function as a parameter that works on single data
+
+//This is also how you write a reduce in ES6. More reduce examples examples will be added later in another file
 
 const customerSorted = customers
                         .sort((customerdataA , customerdataB) => customerdataA.age > customerdataB.age )
                         .filter( customer => customer.nat === 'ES')
-                        
+                        .reduce( (acc, cust) => acc + cust.age , 0)
 
 console.log(customerSorted)
