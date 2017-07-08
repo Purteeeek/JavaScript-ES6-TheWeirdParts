@@ -64,3 +64,9 @@ console.log(customer_Email)
 
 // so basically a map function is a function that takes the array and pipes a singular object inside. and what you have to do with the singular object
 // has to go inside the map function, which will be another function
+
+// returning an object in es6 using a map function in a single line is shown below
+
+const email_data = customers.map( mapEmailANdAvatar = customerdata => ({email: customerdata.email, avatar: customerdata.picture}))
+
+console.log(email_data)
