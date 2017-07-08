@@ -62,3 +62,5 @@ console.log(customer_Email)
 
 // this helps create a pipeline. you can chain many map functions to one another. But this is the basic that you need to know to shift to es6
 
+// so basically a map function is a function that takes the array and pipes a singular object inside. and what you have to do with the singular object
+// has to go inside the map function, which will be another function
