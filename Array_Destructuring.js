@@ -31,3 +31,7 @@ console.log(data)
 console.log(data[0])
 console.log(data[1])
 
+// ES6 way of destructuring would be. This is so much better because we dont need to know what is there at what element of array
+const [customer,orders] = getCustomerAndOrders()
+console.log(customer)
+console.log(orders)
