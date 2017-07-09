@@ -1,10 +1,10 @@
-console.log(b)// will log "b was called"
-console.log(a)//will log undefined
+b();// will log "b was called"
+console.log(a);//will log undefined
 
-var a = "hello world"
+var a = "hello world";
 
-func b() {
-    console.log("b was called") 
+function b(){
+    console.log("b was called")
 }
 
 //The above phenomena taking place is because of something known as hoisting.
@@ -37,3 +37,17 @@ func b() {
 // In case of variables its just the variable name. Its only declared and gets a 
 // value of undefined
 
+// undefined is a special keyword in javascript which means the variable is not set to anything.
+// When javascript is in the hoisting phase it takes the variable declaration and assign them a 
+// value of undefined.
+// where ass if you dont have a variable declaration and try to use the variable then 
+// you will get an error saying "The variable is not defined"
+// undefined is very different. Lets check it.
+
+var c ;
+if (c === undefined){ // note undefined is not in quotes and is a keyword
+    console.log("c is undefined")
+}
+else {
+    console.log("c is defined")
+}
