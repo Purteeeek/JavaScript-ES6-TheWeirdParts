@@ -28,4 +28,5 @@ const getFinalPrice = (discount,tax) => {
 	return afterDiscount + tax
 }
 
-//Single line arrow functions return is implicit. when curly braces are used you need a return
+//Single line arrow functions return is implicit. when curly braces are used you need a return 
+// If you want to return an objec then ({ put your return type as object code in here})
