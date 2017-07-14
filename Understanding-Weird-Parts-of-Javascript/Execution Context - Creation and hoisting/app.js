@@ -51,3 +51,4 @@ if (c === undefined){ // note undefined is not in quotes and is a keyword
 else {
     console.log("c is defined")
 }
+// Therefore 
