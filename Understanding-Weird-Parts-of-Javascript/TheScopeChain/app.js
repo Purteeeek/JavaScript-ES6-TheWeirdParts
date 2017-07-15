@@ -38,3 +38,28 @@ a();
 // in this case it went to global and global had myVar = 1. HEnce the value 1.
 
 //This outer references make a chain and this is called as the scope chain.
+
+
+
+
+
+//function a() {
+	
+	// function b() {
+	//		console.log(myVar);
+	// }
+
+//	var myVar = 2;
+//	b();
+//}
+
+//var myVar = 1;
+//a();
+
+
+// SO now in the above example. The function b sits inside function a so the outer reference will be to a and in this case
+// myVar will be 2 and not 1.
+// Also note that on the global level function b cannot be invoked directly as it now sits inside and 
+// and when the global execution context was created function a was added to the memory space but not funtion b .
+
+
