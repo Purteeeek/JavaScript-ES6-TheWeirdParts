@@ -13,3 +13,6 @@ set a variable to this. Let this be for the engine.
 This also means lack of existence of a value and you can use this. You can set a variable to null if you want it 
 to be nothing explicitly
 
+---------3. boolean -------------
+It literally means true or false. both in lower case
+
