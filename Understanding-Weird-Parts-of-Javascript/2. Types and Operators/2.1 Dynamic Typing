@@ -1,0 +1,11 @@
+Dynamic Typing is nothing but a big word which means, that You dont tell the engine what type of data a variable holds, it figures out itself while the code is running
+
+variables can hold different types of values because all of that is figured out during execution
+
+------STATIC TYPING---------
+bool a = "hello" will give error
+
+-----DYNAMIC TYPING---------
+var a = true ;
+a = 2.5
+a = 'YAS QUEEN'
