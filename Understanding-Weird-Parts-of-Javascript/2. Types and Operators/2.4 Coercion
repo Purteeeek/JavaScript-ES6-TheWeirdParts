@@ -11,6 +11,7 @@ JS tends to try to convert it to what value you would want.
 The coercion of Null to a number is 0 // we use it for not any value but it is coerced to 0
 The coercion of '1' to a number is 1
 the coercion of 'dsa' to a number is NaN which literally means not a number
+The coercion of 'undefined' is NaN
 
 Isn't this behaviour very strange?
 Welcome to javascript
