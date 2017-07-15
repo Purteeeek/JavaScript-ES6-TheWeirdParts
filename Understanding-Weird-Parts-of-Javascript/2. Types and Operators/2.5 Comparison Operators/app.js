@@ -20,8 +20,19 @@ console.log(3 < 2)
 a = Number(false)
 console.log(a) // 0 
 
-// so false when coerced to number becomes 0 
-// and 0 < 1
+// so false when coerced to number becomes 0 . and true becomes 1 when coerced
+
+console.log(false < 1)
 // Therefore javascript logged true.
 // JUST USE THE METHODS TO DEBUG AND CHECK WHAT IS GOING TO BE COERCED TO WHAT . DONT WRITE SUCH THINGS EXPLICITLY 
 // IN CODE
+
+// Now notice even in 1 < 2 < 3
+// it is not returning true because it actually checked the number
+// what actually happened was 
+// 1 < 2 returned true 
+// true < 3
+// true was coerced to 1 
+// 1 < 3 
+// and hence it returned true 
+
