@@ -1,0 +1,3 @@
+Hello I hope you understood all these concepts. 
+Apply them. Learn more. Explore more.
+Till then Enjoy JavaScript
