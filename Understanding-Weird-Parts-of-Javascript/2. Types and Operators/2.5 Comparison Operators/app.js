@@ -50,3 +50,19 @@ console.log("" == 0) // returns true
 console.log(""  == false) // returns true
 // So basically variables are coerced and then a check is being done in == 
 // this is a strange behaviour
+
+// TO SOLVE THE ABOVE PROBLEM WE HAVE === Which is called STRICT EQUALITY.
+// THIS TRIES TO COMPARE BOTH THE PARAMETERS BUT DOESNT TRY TO COERCE THE VALUES.
+// SO NOW It WILL BEHAVE LIKE YOU WOULD EXPECT IT TO
+
+console.log( 3 === 3) //true 
+console.log( "3" === 3 )//false
+console.log(1 === true) // false
+console.log("" === false)// false
+
+// so basically a === is  saviour that saves us from all those errors.
+
+
+
+
+
