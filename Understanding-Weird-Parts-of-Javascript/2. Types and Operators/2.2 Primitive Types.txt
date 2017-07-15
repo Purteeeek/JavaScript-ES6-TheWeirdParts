@@ -1,0 +1,10 @@
+Primitive types are anything whihc is not an object.
+A type of data that represents a single value. 
+remember objects are name and value pairs. 
+
+There are 6 Primitive types in JS 
+
+--------- 1. undefined --------------
+undefined represents the lack of existence of a variable. it is a keyword that javascript sets when something
+has been declared but not set to a value. We have seen this while learning the concept of hoisting. You shouldn't 
+set a variable to this
