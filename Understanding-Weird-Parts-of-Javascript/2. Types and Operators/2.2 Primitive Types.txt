@@ -16,3 +16,9 @@ to be nothing explicitly
 ---------3. boolean -------------
 It literally means true or false. both in lower case
 
+--------4. number ---------------
+Floating point number ie there is always some decimals. Unlike any other programming language. 
+there is only one 'number' type so it can make math weird.
+
+-------5. string -------------
+Its a sequence of characters in both in double quotes and single quotes. Yes its a primitive type.
