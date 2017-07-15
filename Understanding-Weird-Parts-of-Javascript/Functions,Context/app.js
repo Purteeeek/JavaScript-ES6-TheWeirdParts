@@ -30,7 +30,10 @@ console.log(myVar)
 // and in the third execution context the value of myVar was undefined
 // After the execution of b got over the context was popped from the 
 // execution stack and similar happened with a. and then finally again
-// globally the value of myVar is 1
+// globally the value of myVar is 1. 
+// Because both the execution contexts of a and b have now popped out of the 
+// stack. in the global execution context the value of myVar is still 1
+// hence the last output is also 1
 
 //------SCOPE---------
 // This tells us a lot about the scope of the variables 
