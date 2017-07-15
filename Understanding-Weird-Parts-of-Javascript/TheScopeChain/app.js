@@ -61,5 +61,11 @@ a();
 // myVar will be 2 and not 1.
 // Also note that on the global level function b cannot be invoked directly as it now sits inside and 
 // and when the global execution context was created function a was added to the memory space but not funtion b .
+// So now the scope chain is something like 
+// global execution context outside where myVar = 1
+// function a's execution context pointing to global at external reference where myVar = 2
+// function b's execution context pointing to a's execution context for external reference
 
+// So if we dont declare myVar at all in a then again the console.log will be 1 as it passes through the chain till the
+// very bottom
 
