@@ -60,9 +60,28 @@ console.log( "3" === 3 )//false
 console.log(1 === true) // false
 console.log("" === false)// false
 
+
+// SO GENERALLY THE LEARNING HERE IS USE === WHEN DOING EQUALITY COMPARISONS AND COMPARE WHAT YOU THINK WILL BE 
+//OF THE SAME TYPE. BUT THERE IS TRIAL AND ERROR THAT ALWAYS TAKES PLACE
 // so basically a === is  saviour that saves us from all those errors.
 
+// JUst like the equality and strict equality there are inequality and strict inequality.
+// != and !==
+// they behave exactly like the equality and strict equality
 
+if ( 1 != true ) {
+	console.log("1 is true") // logs this 
+}
+else {
+	console.log("1 is not true and is a number")
+}
+
+if ( 1 !== true ) {
+	console.log("1 is true") 
+}
+else {
+	console.log("1 is not true and is a number") // logs this 
+}
 
 
 
