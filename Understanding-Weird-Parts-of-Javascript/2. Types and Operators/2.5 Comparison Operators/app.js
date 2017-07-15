@@ -36,3 +36,17 @@ console.log(false < 1)
 // 1 < 3 
 // and hence it returned true 
 
+// LETS INTRODUCE NOW == and === 
+// In javascript == does check if two parameters are equal to each other. It is not strict. It tries to coerce
+// and check if they are equal
+// that is 
+console.log(1 == true) // returns true
+console.log(null == 0) // returns false
+// null coerces to zero in other scenarios but not while == comparison.
+// very strange behaviour. but once you understand it you get used to it.
+console.log(null < 1)// returns true
+// as here null was coerced to zero but not in the above scenario.
+console.log("" == 0) // returns true
+console.log(""  == false) // returns true
+// So basically variables are coerced and then a check is being done in == 
+// this is a strange behaviour
