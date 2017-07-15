@@ -37,3 +37,27 @@ document.addEventListener('click',clickHandler);
 
 waitFor4Seconds();
 console.log("Finished Entire Execution")
+
+// So as you may note when you open the html file. refresh. or look at the console. it waits for 4 seconds and then logs
+// finished 4 second function and then sayd finished execution.
+//Now if you click on the screen. 
+// in those 4 seconds when the function is actually running. 
+// There should be a console log of "was clicked"
+// Refresh the page and in the 4 second buffer just click on the screen. 
+// ANd check the output.
+
+// Amazed ? Right.
+// The output is: 
+// finished 4 second function
+// finished entire execution 
+// was clicked 
+// This explains that when you clicked asynchronously it was added asyncnhronously to the event queue by the event
+//listener.
+// But javascript executed it only when it finished executing everything in the execution stack?
+// So that is about it. Javascript engine functions synchronously where as other parts that function asynchronously
+// add things to the event queue which js checks after it finishes the execution stack.
+// which in our case was the finished entire execution and then it checked the
+// event queue and it had a click event in it.
+// so it checked what it was supposed to do when there is a click event and it logged whatever was to be done.
+
+// And then there was nothing in the execution stack nor in the event queue. which is unless you click somewhere.
