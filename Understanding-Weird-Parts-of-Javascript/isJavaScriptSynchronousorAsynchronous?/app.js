@@ -19,3 +19,21 @@
 
 
 //LETS SEE WHAT WE HAVE DISCUSSED IN WORK NOW
+
+function waitFor4Seconds() {
+	var ms = 4000 + new Date().getTime();
+	while (new Date() < ms){
+
+	}
+	console.log("finished 4 second function")
+}
+
+function clickHandler() {
+	console.log("Was clicked")
+}
+
+//listen for event click
+document.addEventListener('click',clickHandler);
+
+waitFor4Seconds();
+console.log("Finished Entire Execution")
