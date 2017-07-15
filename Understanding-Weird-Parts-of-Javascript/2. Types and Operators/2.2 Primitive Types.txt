@@ -22,3 +22,8 @@ there is only one 'number' type so it can make math weird.
 
 -------5. string -------------
 Its a sequence of characters in both in double quotes and single quotes. Yes its a primitive type.
+
+------6. Symbol ------------
+This is a primitve type that got included in ES6.
+A Symbol is a unique and immutable primitive value and may be used as the key of an Object property (MDN Defn)
+We'll talk about this later as I haven't explored this yet.
