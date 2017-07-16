@@ -41,3 +41,36 @@ anonymousHi()
 // we saw that while the hoisting phase only variable declartions are put into the memory 
 // and are given a value of undefined 
 // so until the code below this is executed , we cannot call the anonymous function
+
+function logSomething(a){
+	console.log(a)
+}
+
+logSomething(69) // console logs 3 
+logSomething("Hello") // console logs Hello 
+logSomething({
+	name : "Pratik"
+}) // console logs the entire object
+
+logSomething(function() {
+	console.log("Pratik Created a function on the fly")
+}) // will log the function object. As I said. 
+
+//FIrst class functions. Create them on the fly pass them to functions as parameters.
+
+function run(a) {
+	a()
+}
+
+run(function() {
+	console.log("Pratik Created a function on the fly")
+})
+
+// in the above statements I created a function run that gets a parameter.
+// and I called the parameter. so then later I passed a function to it and then tada it was called.
+
+
+
+
+
+
