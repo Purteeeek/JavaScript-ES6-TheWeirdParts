@@ -54,7 +54,8 @@ logSomething({
 
 logSomething(function() {
 	console.log("Pratik Created a function on the fly")
-}) // will log the function object. As I said. 
+}) // will log the function object. As I said. you just created the function inside the parantheses
+// on the fly
 
 //FIrst class functions. Create them on the fly pass them to functions as parameters.
 
