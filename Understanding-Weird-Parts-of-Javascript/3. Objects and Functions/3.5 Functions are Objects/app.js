@@ -30,3 +30,12 @@ console.log(sayHelloWorld) // this will log the function object
 
 console.log(sayHelloWorld.language) // this will log English.
 // ta-da this is an object like behaviour. so functions are nothing but objects
+
+// so to explain in further detail.
+// our function object has a few properties.
+// the name property is the name that we gave the function sayHelloWorld.
+// the code property is the property which has our invokable code which is console.log("Hello World")
+sayHelloWorld()
+// so whenever you invoke a function only that happens. (As mentioned above it sits in the code property
+// of the function object)
+// also we attached a key value pair called language : "English"  to it.
