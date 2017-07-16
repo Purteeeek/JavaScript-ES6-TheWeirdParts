@@ -24,7 +24,7 @@ function greetMe(person) {
 	console.log("Hey There " + person.firstname)
 }
 
-function greetMe(person1) // Hey There Pratik 
+greetMe(person1) // Hey There Pratik 
 // you passed object as a parameter.
 
 // but guess whats better you can create objects on the fly like we make our variables while 
