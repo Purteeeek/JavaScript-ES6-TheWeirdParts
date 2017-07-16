@@ -13,16 +13,20 @@ sayHi() // hoisting
 function sayHi () {
 	console.log("say hi bruh")
 }
-/
+// the above was put directly into the memory
 // the above function is a function statement as it doesnt result in some value. it just gets put in the memory
 
 
 // the obve function gets hoisted and also it has a name property which is sayHi and code prop which has
 // our code in it 
 
+
+// anonymousHi() ---> will result in error. uncomment and think why 
 var anonymousHi = function () {
 	console.log('Say hi bruh')
 }
+
+anonymousHi()
 
 // the above function is a function expression as some value is being generated and being given to the 
 //variable
@@ -30,3 +34,10 @@ var anonymousHi = function () {
 // but we dont need it as we have a variable that knows where the function resides. and it has the same 
 // code property 
 
+// anonymousHi() will give an error if we try to call it anywhere above the line where we wrote our function
+// which was given to a variable
+// Calling the function expression before declaration is not possible. 
+// even tho the variable is given a value of a function
+// we saw that while the hoisting phase only variable declartions are put into the memory 
+// and are given a value of undefined 
+// so until the code below this is executed , we cannot call the anonymous function
