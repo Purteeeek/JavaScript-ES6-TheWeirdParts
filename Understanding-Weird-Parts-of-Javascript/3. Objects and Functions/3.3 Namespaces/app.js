@@ -13,4 +13,19 @@ console.log(name) // logs Hola
 // wouldnt set it.
 // but I am talking about a scenario where you get two values of same name.
 
-// well objects do our job
+// well objects do our job 
+// To protect the values what you can simply do is 
+
+var englishGreetings = {
+	greeting : "Hello"
+}
+
+var spanishGreetings = {
+	greeting : "Hola"
+}
+
+console.log(englishGreetings.greeting)
+console.log(spanishGreetings.greeting)
+
+// Now the two objects above are just containers for our names and they can keep the same name 
+// without messing around with each other
