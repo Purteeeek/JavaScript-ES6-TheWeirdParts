@@ -13,3 +13,20 @@
 // also it is optional to give a name to a function in js. you can have anonymous functions too
 
 // This is a very weird concept. so lets see and prove it 
+
+function sayHelloWorld() {
+	console.log("Hello World")
+}
+
+sayHelloWorld.language = "English" // We just used the dot operator and attached the 
+// property to our function. IN other languages this is not possible. 
+
+console.log(sayHelloWorld) // this will log the function object 
+// this will log 
+// function sayHelloWorld() { 
+//	console.log("Hello World")
+// }
+// but now check this out 
+
+console.log(sayHelloWorld.language) // this will log English.
+// ta-da this is an object like behaviour. so functions are nothing but objects
