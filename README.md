@@ -11,7 +11,8 @@ This repository will give one the basic understanding of how javascript function
 
 This Repository has Two Parts namely **ES6 Basics** and **Understanding-Weird-Parts-of-Javascript**
 
-Currently Both the sections are under construction and new content is being added on almost a daily basis.
+Currently Both the sections are under construction and new content is being added on almost a daily basis. 
+**PLEASE START READING UNDERSTANDING-WEIRD-PARTS-OF-JAVASCRIPT FIRST**
 
 #### 1. Understanding-Weird-Parts-of-Javascript
 
