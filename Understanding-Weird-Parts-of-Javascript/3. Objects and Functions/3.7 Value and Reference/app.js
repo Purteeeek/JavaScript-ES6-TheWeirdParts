@@ -37,3 +37,21 @@ console.log(d);
 // because as both the things are pointing to the same location, the content change will be reflected .
 // c and d are just two different names for the same object in this case. 
 
+
+
+// lets write a function that changes the name property
+function changeName(obj){
+	obj.name = "Pasha"
+}
+
+changeName(d);
+// notice that I have passed d to the function
+console.log(c);
+console.log(d);
+// and as both c and d were pointing to the same locations. the property name changed to both of them.
+// when d was passed to the function .
+// the function parameter obj also pointed to the same memory space and changed the value .
+// understanding this behaviour can save you from some bugs which are hard to debug
+
+
+
