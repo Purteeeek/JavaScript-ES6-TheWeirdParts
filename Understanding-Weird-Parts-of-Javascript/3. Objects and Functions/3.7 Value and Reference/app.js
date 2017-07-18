@@ -54,4 +54,16 @@ console.log(d);
 // understanding this behaviour can save you from some bugs which are hard to debug
 
 
+// Now there is an exception to the above case.
+var c = { name: "Purteeek"}
+// now when I used the object literal syntax again, I am telling javascript to create a new object.
+// and now a new memory space was set up and a new object was again created.
+// and now only c points to this .
+// as d was pointing to the old object.
+// consider this as a new object with new memory space and the reference in c was changed to this new 
+// memory space 
+console.log(c);
+console.log(d);
+
+
 
