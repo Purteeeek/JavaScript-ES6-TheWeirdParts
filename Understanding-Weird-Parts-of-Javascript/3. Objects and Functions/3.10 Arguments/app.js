@@ -57,3 +57,6 @@ sayHello2("Pratik");
 sayHello2("Pratik", "Deshpande");
 sayHello2("Pratik","Deshpande","Spanish");
 
+// Now as ES6 is out Arguments are still there but theyre not the best way to do it. the best way is called the
+// Spread params and we will see that in ES6 part later
+
