@@ -43,6 +43,7 @@ fz[2]();
 // now the functions in the array are all the same
 // and the i is refering to the same space
 // and also i when build function was completed was 3
+// THE LAST VALUE OF i was 3
 // and therefore all the three printed 3
 // understanding closures?
 // uncomment those two lines in the function and refresh the browser you'll understand all that I typed in a 
