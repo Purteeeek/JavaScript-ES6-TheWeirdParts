@@ -38,3 +38,17 @@ console.log(hola);
 // console.log(hola()) will give an error.
 // these are the basics of IIFE's
 // IIFE's let you run the function as soon as you create it
+
+// another ways of writing IIFEs are
+(function(name){
+	console.log("Hello " + name);
+}("Pratik"))
+
+// you have to wrap the entire function expression inside () because of syntax parsers. try using 
+// them without the () 
+// in Js if the line starts with function 
+// js thinks its gonna be a function statement
+// but you want an anonymous function.
+// you are not declaring any function with a name/
+// so to trick java script that you are typing an expression
+// you have to wrap everything inside()
