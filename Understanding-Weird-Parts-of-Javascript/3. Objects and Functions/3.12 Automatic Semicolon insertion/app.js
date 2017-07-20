@@ -36,3 +36,16 @@ returnPerson() // undefined?
 // this automatic semicolon insertion can be dangerous.
 // the syntax parser reads the code character by character.
 // so when it saw an enter after return it assumed that you ended the line and automatically inserted a semicolon there
+
+// to avoid this enter your own semicolons 
+// and as syntax parser reads code character by character 
+
+function returnPerson1() {
+	return {
+		name : "Pratik"
+	}
+}
+
+// the above way would return a function as the syntax parser sees a space and then an open curly brace
+// which is an object literal syntax and understands that you intend return an object
+// this is a dangerous problem which can be so hard to track down
