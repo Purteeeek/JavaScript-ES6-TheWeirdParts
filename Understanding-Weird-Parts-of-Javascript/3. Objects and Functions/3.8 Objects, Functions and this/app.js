@@ -16,7 +16,8 @@ function a(){
 a()
 // surprised much?
 // this still refers to the window object even if it is inside a function.
-// so whenever you are invoking a function at a global level it is going to point at the window object.
+// so whenever you are invoking a function which sits in the code at
+// a global level it is going to point at the window object.
 
 var b = function () {
 	console.log(this)
@@ -27,7 +28,7 @@ b()
 console.log(myVariable)
 
 // so even with the function expression, the behaviour of this doesnt change. 
-// the function was invoked on a global level and this still points to the window object.
+// the function was invoked, which sits on a global level and this still points to the window object.
 // now you can see that even after b was invoked and completed. we can still print myVariable.
 // because we attached it to the global ie the window object and not the function.
 // we have three execution contexts, global ,a and, b and all the three this are pointing towards the same window 
