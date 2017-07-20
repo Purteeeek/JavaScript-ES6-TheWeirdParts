@@ -3,8 +3,6 @@ function buildfunc() {
 
 	for(var i = 0; i < 3 ; i++){
 		arr.push( function() {
-			   // var x = i
-			   // console.log(x)
 				console.log(i);
 				console.log("--------------")
 			}
