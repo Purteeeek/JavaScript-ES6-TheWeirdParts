@@ -40,7 +40,7 @@ function b(){
 // undefined is a special keyword in javascript which means the variable is not set to anything.
 // When javascript is in the hoisting phase it takes the variable declaration and assign them a 
 // value of undefined.
-// where ass if you dont have a variable declaration and try to use the variable then 
+// where as if you dont have a variable declaration and try to use the variable then 
 // you will get an error saying "The variable is not defined"
 // undefined is very different. Lets check it.
 
