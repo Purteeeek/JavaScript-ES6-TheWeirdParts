@@ -18,3 +18,22 @@ var hello = function(name) {
 // we invoke it by the variable name 
 hello("Pratik");
 
+// immediately invoked function expressions.
+// these are the functions that you call as soon as you declare them
+
+var hola = function(name){
+	return "hello " + name;
+}("Pratik");
+
+// notice the weird syntax above, we just wrote a function which created the function object and 
+// as soon as we closed the function object and invoked the function like we would invoke any fnuction
+// we also gave in the parameter like we used to 
+// also now variable hola doesnt hold the entire function but only holds.
+// hello Pratik
+
+console.log(hola);
+
+// see it yourself.
+// hola holds a string and not a function 
+// console.log(hola()) will give an error.
+// these are the basics of IIFE's
