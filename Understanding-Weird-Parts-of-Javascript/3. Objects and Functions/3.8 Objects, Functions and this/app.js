@@ -53,3 +53,44 @@ c.log() // this points to the object c.
 // as the this is pointing to the object you can now mutate the values or add new properties by using the 
 // this keyword
 
+// THE THIS Bug - Most common bug
+
+var d = {
+	name : "Pratik"
+	log : function() {
+		console.log(this)
+		this.name = "Updated Pratik"
+
+		var setName = function (newName){
+			this.name = newName
+		}
+
+		setName("Updated Pratik through internal function")
+		console.log(this)
+	}
+}
+
+// ------ EXPECTED BEHAVIOUR ------------
+// above we have created an object which has a log method which updated the name to Updated Pratik 
+// we console.log(this) to check that the name property of the object was changed.
+// we have written a function inside the function where we expect to change the name property again to whatever 
+// parameter is being passed 
+// and then we call it 
+// now we should see name property of the object to be Updated Pratik through internal function
+
+// ------ How javascript behaves -------
+// when you check the console.logs you will see that the setName function changed nothing in the object.
+// and the name property in the object was still Updated Pratik 
+// it happened because when you create the function inside a function.
+// technically you are still in the object.
+// and you would think that what you are changing is the property of the object but no.
+// what you just changed or edited was on the global object.
+// WHEN A METHOD IS WRITTEN INSIDE A METHOD WHICH SITS INSIDE AN OBJECT.
+//THE INNER MOST METHOD GETS THE this VARIABLE WHICH POINTS TO THE GLOBAL OBJECT.
+// STRANGE BUT THIS IS HOW JAVASCRIPT FUNCTIONS.
+
+console.log(name)
+// NOW THIS NAME LOGS
+// Updated Pratik through internal function.
+// This is one of the parts where javascript is strange.
+
