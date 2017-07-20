@@ -33,3 +33,23 @@ console.log(myVariable)
 // because we attached it to the global ie the window object and not the function.
 // we have three execution contexts, global ,a and, b and all the three this are pointing towards the same window 
 // object
+
+
+var c = {
+	name : "this is the object we created"
+	log : function () {
+		console.log(this)
+		this.fullName : "Updated the object"
+	}
+}
+
+// above we created a function log which is a method on the object c.
+
+c.log() // this points to the object c.
+
+// now as the function or the method was written inside the c object this points to the c object
+// so whenever the method or function is written inside an object the this keyword becomes the 
+// object that the method is sitting inside of
+// as the this is pointing to the object you can now mutate the values or add new properties by using the 
+// this keyword
+
