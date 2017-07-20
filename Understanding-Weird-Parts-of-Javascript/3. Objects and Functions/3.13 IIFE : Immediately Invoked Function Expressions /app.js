@@ -37,3 +37,4 @@ console.log(hola);
 // hola holds a string and not a function 
 // console.log(hola()) will give an error.
 // these are the basics of IIFE's
+// IIFE's let you run the function as soon as you create it
