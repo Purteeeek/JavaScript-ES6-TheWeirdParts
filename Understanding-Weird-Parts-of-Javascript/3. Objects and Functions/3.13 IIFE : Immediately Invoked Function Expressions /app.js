@@ -52,3 +52,7 @@ console.log(hola);
 // you are not declaring any function with a name/
 // so to trick java script that you are typing an expression
 // you have to wrap everything inside()
+
+// so basically because of ( funct() ... )
+// the expression was written and function object was created on the fly and it was invokable .
+// this is the classic example of IIFE
