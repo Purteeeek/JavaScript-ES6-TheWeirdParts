@@ -6,6 +6,7 @@ function buildfunc() {
 			   // var x = i
 			   // console.log(x)
 				console.log(i);
+				console.log("--------------")
 			}
 		)
 	}
