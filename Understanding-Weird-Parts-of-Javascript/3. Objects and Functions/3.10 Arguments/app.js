@@ -32,3 +32,28 @@ sayHello("Pratik","Deshpande","English");
 
 // the above calls prove that whe you pass only one param it goes in the left most param.
 // that means the params get the value from left to right. ie how the programmer wrote it.
+
+// The es6 has something called as the default parameter which we will talk about in the es6 part later
+
+// but we have a tweak of how we can set the default params here.
+
+function sayHello2(firstName, lastName, language){
+
+	language = language || "English"; // if language is undefined it gets passed to or operator and undefined 
+	// is coerced to false and hence language gets set to English if you dont pass it at all
+
+	console.log(firstName);
+	console.log(lastName);
+	console.log(language);
+	console.log(arguments); // this will print all the arguments that were passed when called .
+	// arguments is a keyword
+	// also arguments are an array like structure.
+	console.log("arg 0 is" + arguments[0]);
+	console.log("------------------");
+}
+
+sayHello2();
+sayHello2("Pratik");
+sayHello2("Pratik", "Deshpande");
+sayHello2("Pratik","Deshpande","Spanish");
+
