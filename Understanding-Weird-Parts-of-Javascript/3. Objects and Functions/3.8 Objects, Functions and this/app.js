@@ -88,9 +88,40 @@ var d = {
 // WHEN A METHOD IS WRITTEN INSIDE A METHOD WHICH SITS INSIDE AN OBJECT.
 //THE INNER MOST METHOD GETS THE this VARIABLE WHICH POINTS TO THE GLOBAL OBJECT.
 // STRANGE BUT THIS IS HOW JAVASCRIPT FUNCTIONS.
+// the this variable inside the method which was created inside the method pointed to the global object.
+// and the name property got attached to the global object
 
 console.log(name)
 // NOW THIS NAME LOGS
 // Updated Pratik through internal function.
 // This is one of the parts where javascript is strange.
+
+
+// -------- THE FIX FOR THE ABOVE BUG ---------------
+// so what do we do when we have such a scenario?
+
+var e = {
+	name : "Initial name"
+	log  : function() {
+		var self = this 
+		// we know that this is pointing towards the object. 
+		// and objects are copied in js by reference we have studied that as well.
+		// so we know that self and this point at the same location.
+		// so now inside the function wherever you want to use this use self instead.
+		// tada bug fix
+
+		console.log(self)
+		self.name = "changed by first method"
+
+		var changeName = function(newName) {
+			self.name = newName
+		}
+
+		console.log(self)
+		changeName("Changed by inner most method")
+		console.log(self)
+	}
+}
+
+// So by following the above practice you will achieve the expected behaviour
 
