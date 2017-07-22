@@ -34,4 +34,8 @@ There are some places where a portion of code is commented out. To run the comme
 *Step 2* Comment the code that was previously uncommented 
 *Step 3* Save the script go to the browser and hit refresh.
 
+> If you find difficulty in understanding a concept which is written and explained in the code ,
+try writing the same code by yourself and google the concept up. You will find number of explanations up.
+
 **NOTE: YOU WILL NEED TO OPEN THE DEVELOPER TOOLS TO BE ABLE TO READ THE OUTPUT AS ALMOST ALL OUTPUT IS LOGGED ON THE CONSOLE**
+
