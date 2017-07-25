@@ -37,5 +37,7 @@ There are some places where a portion of code is commented out. To run the comme
 > If you find difficulty in understanding a concept which is written and explained in the code ,
 try writing the same code by yourself and google the concept up. You will find number of explanations up.
 
+Want me to cover more concepts. Leave an email
+
 **NOTE: YOU WILL NEED TO OPEN THE DEVELOPER TOOLS TO BE ABLE TO READ THE OUTPUT AS ALMOST ALL OUTPUT IS LOGGED ON THE CONSOLE**
 
